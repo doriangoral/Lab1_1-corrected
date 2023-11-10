@@ -2,16 +2,19 @@ import java.util.Scanner;
 
 public class Hello
 {
+    static String name;
+    static String age;
+    static String major;
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("What is your name? ");
-        String name = scanner.nextLine();
+        name = scanner.nextLine();
         System.out.print("What is your age? ");
-        String age = scanner.nextLine();
+        age = scanner.nextLine();
         System.out.print("What is your major? ");
-        String major = scanner.nextLine();
+        major = scanner.nextLine();
 
         System.out.println("Name : " + name);
         System.out.println("Age : " + age);
