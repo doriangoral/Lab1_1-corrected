@@ -1,12 +1,20 @@
+import java.util.Scanner;
+
 public class Hello
 {
-    static String name = "Dorian";
-    static int age = 23;
-    static String major = "IT";
     public static void main(String[] args)
     {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Major: " + major);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("What is your name? ");
+        String name = scanner.nextLine();
+        System.out.print("What is your age? ");
+        String age = scanner.nextLine();
+        System.out.print("What is your major? ");
+        String major = scanner.nextLine();
+
+        System.out.println("Name : " + name);
+        System.out.println("Age : " + age);
+        System.out.println("Major : " + major);
+        scanner.close();
     }
 }
